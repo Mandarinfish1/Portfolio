@@ -1,0 +1,118 @@
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ /*display: flex;*/
+ font-family: Arial, Helvetica, sans-serif;
+ /*background-color: #fff;*/
+}
+
+.header {
+ padding: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: darkslategray;
+ color: skyblue;
+}
+
+.cover {
+ background-image: url("blue-abstract.jpg");
+ background-size: cover;
+ background-position: center;
+ height: 400%;
+ width: 100%;
+ margin-bottom: 25px;
+}
+
+.header, h1 {
+ display: inline-block;
+ font-size: 48px;
+ color: skyblue;
+}
+
+nav  {
+ display:flex;
+ background-color: darkslategray;
+}
+ 
+nav ul {
+ display: flex;
+ justify-content: space-between;
+ padding: 15px 20px;
+ /*font-weight: bold;*/
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration-line: underline;
+ list-style: none;
+ float: right;
+}
+/*nav a{
+ background-color: skyblue;
+ color: darkslategray;
+ font-weight: bold;
+ text-decoration: none;
+}*/
+
+nav a:hover {
+ color: #fff;
+ text-decoration: none;
+}
+main {
+ display: flex;
+ flex-wrap: wrap;
+}
+aside {
+ flex: 1;
+ background-color:rgb(48, 108, 169);
+ padding: 80px;
+ text-align: right;
+ /**add a side border**/
+}
+
+p{
+ font-size: 16px;
+}
+
+.boxes {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sub-container {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.sub-container header{
+ padding: 20px;
+}
+
+.sub-container p {
+ text-align: center;
+}
+
+.sub-container img {
+ width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+ main,
+ nav {
+  flex-direction: column;
+ }
+}
+
+footer {
+ padding: 20px;
+ text-align: center;
+ background-color: #13293d;
+ color: deepskyblue;
+}
