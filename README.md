@@ -10,11 +10,9 @@
 
 ## Screenshot
 
-- add screen shot here
-
 ## Link to Deployed Application
 
-- add link here
+- https://mandarinfish1.github.io/Portfolio-challenge-2/
 
 ## Credits
 
