@@ -10,6 +10,8 @@
 
 ## Screenshot
 
+<a href="file:///C:/Users/adios/desktop/portfolio-challenge-2/assets/Images/portfolio-image.jpeg"></a>
+
 ## Link to Deployed Application
 
 - https://mandarinfish1.github.io/Portfolio-challenge-2/
