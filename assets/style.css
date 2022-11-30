@@ -8,6 +8,7 @@ body  {
   font-family:Arial, Helvetica, sans-serif;
 }
 
+/*styling for header*/
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -18,6 +19,7 @@ body  {
   background-color: #354651;
 }
 
+/*Styling for Diosa in header*/
 .header h1 {
   color: skyblue;
   background-color: dimgray;
@@ -25,17 +27,20 @@ body  {
   text-align: center;
 }
 
+/*hover over Diosa in header causes Diosa to change into Avatar Image. I will change this into an actual picture of myself that does not repeat.*/
 .header h1:hover  {
   background-image: url("red-fish.jpg");
   padding: 55px 55px;
   width: 100%;
 }
 
+/*navigation properties*/
 nav {
   align-content: space-around;
   justify-content: flex-start;
 }
 
+/*navigation styling*/
 nav a {
   justify-items: space-between;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -43,15 +48,18 @@ nav a {
   color: skyblue;
 }
 
+/*hover over navigation bar causes text style change*/
 nav a:hover {
   color: #fff;
 }
-  
+
+/*using flex box for main*/
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*sidebar properties*/
 aside {
   display: flex;
   flex-wrap: wrap;
@@ -63,15 +71,18 @@ aside {
   padding: 40px;
 }
 
+/*hover over sidebar causes style change*/
 aside a:hover  {
   color:#fff;
 }
 
+/*made content into flex box to try and move it*/
 .content {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*content p styling*/
 .content p {
   justify-content:flex-end;
   flex-direction: row;
@@ -79,25 +90,29 @@ aside a:hover  {
   font-size: 20px;
 }
 
+/*images size*/
 .project img  {
   width: 75%;
   height: 75%;
 }
 
+/*hover on project <p> changes text color*/
 .project p:hover {
   color:#fff;  
 }
 
+/*hover on project images causes images to enlarge*/
 .enlarge-pic:hover {
   width: 100%; 
 }
 
+/*Using flexbox for images*/
 .project  {
   display: flex;
   flex-wrap: wrap;
 }
- 
-.project  > div {
+/*project div's styling*/
+.project div {
   width: 200px;
   flex-direction: row;
   justify-content:  center;
@@ -108,6 +123,7 @@ aside a:hover  {
   border-radius: 10px;
 }
 
+/*project <p>, <a> styling*/
 .project  p, a {
   text-align: center;
   font-weight: 200;
@@ -117,6 +133,7 @@ aside a:hover  {
   text-decoration: none;
 }
 
+/*footer styling*/
 footer {
   display: flex;
   flex-wrap:  wrap;
@@ -126,12 +143,14 @@ footer {
   background-color:lightgrey;
 }
 
+/*footer <a> styling*/
 footer a  {
   color: #354651;
   padding: 15px;
   font-weight:  bold;
 }
 
+/*hover on footer causes text color style change*/
 footer a:hover  {
   color:#fff;
 }
@@ -140,11 +159,13 @@ header, main, footer{
   flex-shrink: 1;
 }
 
+/*when screen reaches 768px everything should align into a column*/
 @media screen and (max-width: 768px) {
 main,
 .header,
 nav,
-.apps,
+.content,
+.project,
 footer {
   display: flex;
   flex-direction: column;
