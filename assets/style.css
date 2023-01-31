@@ -116,23 +116,27 @@ aside a:hover  {
 }
 
 /*hover on project images causes images to enlarge*/
-.enlarge-pic:hover {
-  width: 100%; 
+.project img:hover {
+  width: 500px; 
 }
 
 /*Using flexbox for images*/
 .project  {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 /*project div's styling*/
 .project div {
   width: 200px;
   flex-direction: row;
-  justify-content:  center;
+  /*justify-content:  center;*/
   text-align: center;
   border-radius: 10px;
+justify-content: space-between;
+flex: 1;
+
 }
 
 /*project <p>, <a> styling*/
