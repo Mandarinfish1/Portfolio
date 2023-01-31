@@ -6,6 +6,8 @@
 
 body  {
   font-family:Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(150deg,#D98324, #A40606, brown);
+  
 }
 
 /*styling for header*/
@@ -16,22 +18,17 @@ body  {
   justify-content:space-between;
   padding: 25px;
   font-family:  Arial, Helvetica, sans-serif;
-  background-color: #354651;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 10px rgb(53, 4, 4);
+  background-image: linear-gradient(135deg, brown, #A40606, #D98324);
 }
 
 /*Styling for Diosa in header*/
-.header h1 {
+.name {
   color: skyblue;
-  background-color: dimgray;
-  padding: 25px;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
-}
-
-/*hover over Diosa in header causes Diosa to change into Avatar Image. I will change this into an actual picture of myself that does not repeat.*/
-.header h1:hover  {
-  background-image: url("red-fish.jpg");
-  padding: 55px 55px;
-  width: 100%;
 }
 
 /*navigation properties*/
@@ -53,10 +50,24 @@ nav a:hover {
   color: #fff;
 }
 
+.header img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.avatar {
+  height: 105px;
+  width:  105px;
+  box-shadow: 0 2px 10px rgb(53, 4, 4);
+}
+
 /*using flex box for main*/
 main {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  
 }
 
 /*sidebar properties*/
@@ -66,8 +77,11 @@ aside {
   flex-direction:column;
   flex-flow: column;
   justify-content: space-evenly;
-  background-color: dimgray;
-  color: skyblue;
+  background-color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  mix-blend-mode: overlay;
+  box-shadow: 0 5px 10px rgba(0,0,0,2);
+  background: rgba(0,0,0,.2);  
   padding: 40px;
 }
 
@@ -92,8 +106,8 @@ aside a:hover  {
 
 /*images size*/
 .project img  {
-  width: 75%;
-  height: 75%;
+  width: 90%;
+  height: 90%;
 }
 
 /*hover on project <p> changes text color*/
@@ -111,14 +125,12 @@ aside a:hover  {
   display: flex;
   flex-wrap: wrap;
 }
+
 /*project div's styling*/
 .project div {
   width: 200px;
   flex-direction: row;
   justify-content:  center;
-  border: 5px solid skyblue;
-  background-color:#354651;
-  color: skyblue;
   text-align: center;
   border-radius: 10px;
 }
@@ -140,12 +152,13 @@ footer {
   flex-direction: row;
   justify-content: center;
   padding: 20px;
-  background-color:lightgrey;
+  background-image: linear-gradient(80deg, #d95a24, #A40606, brown);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 10px rgb(53, 4, 4);
 }
 
 /*footer <a> styling*/
 footer a  {
-  color: #354651;
   padding: 15px;
   font-weight:  bold;
 }
@@ -157,6 +170,7 @@ footer a:hover  {
 
 header, main, footer{
   flex-shrink: 1;
+  
 }
 
 /*when screen reaches 768px everything should align into a column*/
@@ -170,6 +184,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-flow: column;
+  
   }
 }
 

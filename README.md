@@ -10,7 +10,11 @@
 
 ## Screenshot
 
+<<<<<<< HEAD
+![Alt text](assets/Screenshot.png)
+=======
 ![Alt text](assets/Screenshot_1.png)
+>>>>>>> b467be6c58ca31ca108e658435a5ca773daf5429
 
 ## Link to Deployed Application
 
