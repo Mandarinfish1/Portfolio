@@ -117,9 +117,16 @@ aside a:hover  {
 }
 
 /*hover on project images causes images to enlarge*/
-.project img:hover {
+/*.project img:hover {
   width: 500px; 
+}*/
+
+.project img:hover {
+  transform: scale(1.2);
 }
+
+
+
 
 /*Using flexbox for images*/
 .project  {
