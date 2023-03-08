@@ -1,3 +1,4 @@
+/* Reset default browser style*/
 * {
  box-sizing: border-box;
  padding: 0;
@@ -5,21 +6,21 @@
 }
 
 body  {
-  
-  
   font-family:Arial, Helvetica, sans-serif;
   background-image: linear-gradient(150deg,#D98324, #A40606, brown);
   color:peachpuff;
+  line-height: 1.5;
   min-height: 100vh;
 }
 
 /*styling for header*/
 .header {
   text-align: right;
-  display: flex;
+ /* display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content:space-between;*/
+        width: 100%;
   padding: 25px;
   font-family:  Arial, Helvetica, sans-serif;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
@@ -31,16 +32,59 @@ body  {
 .name {
   color: peachpuff;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
+.header img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.avatar {
+  height: 105px;
+  width: 105px;
+  box-shadow: 0 2px 10px rgb(53, 4, 4);
+}
+
+
+
+
+.container, .content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+/*made content into flex box to try and move it*/
+/*.content {
+  display: flex;
+  /*flex-wrap: wrap;*/
+ /* flex-direction: column;
+}*/
+
+
+/*content p styling*/
+.content p {
+  justify-content: flex-end;
+  /*flex-direction: row;
+  flex-flow: row;*/
+  font-size: 20px;
+}
+
+
+
+
 /*navigation properties*/
 nav {
-  
+        align-items: stretch;
   align-content: space-around;
   justify-content: flex-start;
-  flex-grow: 1;
+/*flex-grow: 1;*/
 }
 
 /*navigation styling*/
@@ -57,60 +101,40 @@ nav a:hover {
   color: #fff;
 }
 
-.header img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.avatar {
-  height: 105px;
-  width:  105px;
-  box-shadow: 0 2px 10px rgb(53, 4, 4);
-}
-
-/*using flex box for main*/
-main {
- display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  /*flex-grow: 1;*/
-  
-}
-
 /*sidebar properties*/
 aside {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   flex-direction:column;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: space-evenly;*/
+      
+      justify-content: space-evenly;
+  
   background-color: #fff;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
   mix-blend-mode: overlay;
-  box-shadow: 0 5px 10px rgba(0,0,0,2);
-  background: rgba(0,0,0,.2);  
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+  background: rgba(0, 0, 0, .2);
   padding: 40px;
 }
 
 /*hover over sidebar causes style change*/
-aside a:hover  {
-  color:#fff;
+aside a:hover {
+  color: #fff;
 }
 
-/*made content into flex box to try and move it*/
-.content {
-  display: flex;
+
+/*using flex box for main*/
+main {
+ /*display: flex;
   flex-wrap: wrap;
+  flex-direction: row;*/
+  /*flex-grow: 1;*/
+      
+      min-height: 80vh;
 }
 
-/*content p styling*/
-.content p {
-  justify-content:flex-end;
-  flex-direction: row;
-  flex-flow: row;
-  font-size: 20px;
-}
 
 /*images size*/
 .project img  {
@@ -135,22 +159,21 @@ aside a:hover  {
 
 
 
-/*Using flexbox for images*/
+/*Using flexbox for images
 .project  {
-  display: flex;
-  flex-wrap: wrap;
-  
-}
+  display: flex: ;
+  flex-wrap: wrap; 
+}*/
 
 /*project div's styling*/
 .project div {
   width: 200px;
-  flex-direction: row;
+ /* flex-direction: row;*/
   /*justify-content:  center;*/
   text-align: center;
   border-radius: 10px;
 justify-content: space-between;
-flex-grow: 1;
+/*flex-grow: 1;*/
 
 }
 
@@ -166,10 +189,12 @@ flex-grow: 1;
 
 /*footer styling*/
 footer {
-  display: flex;
+  /*display: flex;
   flex-wrap:  wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center;*/
+            width:100%;
+            order:4;
   padding: 20px;
   padding-top: 20px;
   background-image: linear-gradient(80deg, #d95a24, #A40606, brown);
@@ -181,6 +206,7 @@ footer {
 footer a  {
   padding: 15px;
   font-weight:  bold;
+      
 }
 
 /*hover on footer causes text color style change*/
@@ -188,14 +214,14 @@ footer a:hover  {
   color:#fff;
 }
 
-header, main, footer{
+/*header, main, footer{
   flex-shrink: 1;
-  
-}
+}*/
 
 /*when screen reaches 768px everything should align into a column*/
-@media screen and (max-width: 768px) {
-main,
+/*@media screen and (max-width: 768px) {*/
+      @media all and (min-width: 768px) {
+/*main,
 .header,
 nav,
 .content,
@@ -203,10 +229,31 @@ nav,
 footer {
   display: flex;
   flex-direction: column;
-  flex-flow: column;
+  flex-flow: column;*/
+  /*.container,*/
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    .content  {
+      
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    main  {
+      flex: 2;
+      order:  2;
+      min-height: 80vh;
+    }
+    .aside  {
+      order:  1;
+      flex: 1;
+    }
   
+    .project {
+      
+      order:  3;
+          }
   }
-}
+
 
 
 
