@@ -8,11 +8,7 @@
 
 ## Description
 
-- I want to create a deployed Portfolio of projects I have created for potential employers to view.
-
-- I built the website to help organize and show the projects I have done.
-
-- Building the website is helping me to learn and apply skills from the The coding Bootcamp.
+- My objective is to create a deployed portfolio of my projects, which will be available online for potential employers to review. The website I am building, utilizing HTML, CSS, and Flexbox, is designed to effectively showcase and organize the completed projects. In addition, developing this website presents an opportunity for me to apply and enhance the skills I have acquired from The University of Richmond Full Stack Coding Bootcamp.
 
 ## Table of Contents
 
@@ -20,22 +16,24 @@
 - [License](#license)
 - [Description](#description)
 - [ScreenShot](#screenshot)
-- [DeployedLink](#link-to-deployed-application)
-- [RepositoryLink](#link-to-github-portfolio-repository)
+- [Deployed Repository Link](#link-to-deployed-application)
+- [Github Repository Link](#link-to-github-portfolio-repository)
 - [Reference](#reference)
 - [Questions](#questions)
 
 ## Screenshot
 
-![Screenshot_1](https://user-images.githubusercontent.com/66844643/215661018-1f1876c2-3598-4ad5-9a3b-d2b0abe75230.png)
+![Screenshot-1](https://user-images.githubusercontent.com/66844643/235260078-e64e22bc-807b-429a-9f83-8626d4bbc46b.png)
 
-![Screenshot_2](https://user-images.githubusercontent.com/66844643/215660957-c93629f9-f1e8-425a-bb1f-0a67b2eeefb7.png)
+![Screenshot-2](https://user-images.githubusercontent.com/66844643/235260123-d0a35abe-b77c-4b47-914e-df252ba81e80.png)
 
-## Link to Deployed Application
+
+
+## Deployed Repository Link
 
 https://mandarinfish1.github.io/Portfolio/
 
-## Link to Github Portfolio Repository
+## Github Repository Link
 
 https://github.com/Mandarinfish1/Portfolio
 
