@@ -1,12 +1,29 @@
-# Personal Portfolio
+# Title
+
+# Portfolio
+
+## License
+
+[![license](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-- I want to create a deployed Portfolio of projects I have created with potential employers to view.
+- I want to create a deployed Portfolio of projects I have created for potential employers to view.
 
 - I built the website to help organize and show the projects I have done.
 
 - Building the website is helping me to learn and apply skills from the The coding Bootcamp.
+
+## Table of Contents
+
+- [Title](#title)
+- [License](#license)
+- [Description](#description)
+- [ScreenShot](#screenshot)
+- [DeployedLink](#link-to-deployed-application)
+- [RepositoryLink](#link-to-github-portfolio-repository)
+- [Reference](#reference)
+- [Questions](#questions)
 
 ## Screenshot
 
@@ -16,20 +33,21 @@
 
 ## Link to Deployed Application
 
-https://mandarinfish1.github.io/Portfolio-challenge-2/
+https://mandarinfish1.github.io/Portfolio/
 
 ## Link to Github Portfolio Repository
 
-https://github.com/Mandarinfish1/Portfolio-challenge-2
+https://github.com/Mandarinfish1/Portfolio
 
-## Link To Github
 
-https://github.com/Mandarinfish1
-
-## Credits
+## Reference
 
 - Tutorial on how to use Flexbox for web page layout can be found at https://www.w3schools.com/css/css3_flexbox.asp
 
-## License
+# Questions
 
-- Please refer to the LICENSE in the repo.
+- If you have any questions, I can be reached at:
+
+- Email: ruizpeggys@yahoo.com
+- Github Username: Mandarinfish1
+- Github Profile Link: https://github.com/Mandarinfish1
