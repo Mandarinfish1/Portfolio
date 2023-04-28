@@ -1,4 +1,4 @@
-/* Reset default browser style*/
+
 * {
  box-sizing: border-box;
  padding: 0;
@@ -9,30 +9,23 @@ body  {
   font-family:Arial, Helvetica, sans-serif;
   background-image: linear-gradient(150deg,#D98324, #A40606, brown);
   color: peachpuff;
-      /*background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);*/
-     /*color: #e6ac00;*/
- 
   line-height: 1.5;
   min-height: 100vh;
+  /*alternative background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);*/
+  /*alternative color: #e6ac00;*/
 }
 
 /*styling for header*/
 .header {
   text-align: right;
- /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content:space-between;*/
-        width: 100%;
+  width: 100%;
   padding: 25px;
   font-family:  Arial, Helvetica, sans-serif;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
   box-shadow: 0 2px 10px rgb(53, 4, 4);
   background-image: linear-gradient(135deg, brown, #A40606, #D98324);
-
-       /* background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 2);*/
-    
+  /*alternative background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 2);*/ 
 }
 
 /*Styling for Diosa in header*/
@@ -55,48 +48,39 @@ body  {
   box-shadow: 0 2px 10px rgb(53, 4, 4);
 }
 
-
-
+.container  {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
 
 .container, .content {
   display: flex;
   flex-direction: column;
 }
 
-
-
-
-
-/*made content into flex box to try and move it*/
-/*.content {
+.container {
   display: flex;
-  /*flex-wrap: wrap;*/
- /* flex-direction: column;
-}*/
-
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 /*content p styling*/
 .content p {
-  justify-content: flex-end;
-  /*flex-direction: row;
-  flex-flow: row;*/
   font-size: 20px;
+  padding: 25px;
 }
-
-
-
 
 /*navigation properties*/
 nav {
-        align-items: stretch;
+  align-items: stretch;
   align-content: space-around;
   justify-content: flex-start;
-/*flex-grow: 1;*/
 }
 
 /*navigation styling*/
 nav a {
-      
   justify-items: space-between;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
@@ -110,20 +94,15 @@ nav a:hover {
 
 /*sidebar properties*/
 aside {
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction:column;
-  flex-flow: column;*/
-  justify-content: space-evenly;
-      
-      
-  
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
   mix-blend-mode: overlay;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
   background: rgba(0, 0, 0, .2);
   padding: 40px;
+
 }
 
 /*hover over sidebar causes style change*/
@@ -131,23 +110,31 @@ aside a:hover {
   color: #fff;
 }
 
-
 /*using flex box for main*/
 main {
- /*display: flex;
+  flex: 1;
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;*/
-  /*flex-grow: 1;*/
-      
-      min-height: 80vh;
+  justify-content: space-between;
 }
 
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  margin-left: 250px;
+}
 
 /*images size*/
 .project img  {
-  width: 90%;
-  height: 65%;
-           box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+  margin-top: 10px;
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 300px;
 }
 
 /*hover on project <p> changes text color*/
@@ -155,34 +142,17 @@ main {
   color:#fff;  
 }
 
-/*hover on project images causes images to enlarge*/
-/*.project img:hover {
-  width: 500px; 
-}*/
-
 .project img:hover {
   transform: scale(1.2);
 }
 
-
-
-
-/*Using flexbox for images
-.project  {
-  display: flex: ;
-  flex-wrap: wrap; 
-}*/
-
 /*project div's styling*/
 .project div {
-  width: 200px;
- /* flex-direction: row;*/
-  /*justify-content:  center;*/
+  flex-basis: 70%;
+  margin: 10px;
   text-align: center;
   border-radius: 10px;
-justify-content: space-between;
-/*flex-grow: 1;*/
-
+  justify-content: space-between;  
 }
 
 /*project <p>, <a> styling*/
@@ -197,28 +167,27 @@ justify-content: space-between;
 
 /*footer styling*/
 footer {
-  /*display: flex;
-  flex-wrap:  wrap;
-  flex-direction: row;*/
-  justify-content: space-around;
-            width:100%;
-            order:4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width:100%;
+  order:4;
   padding: 20px;
   padding-top: 20px;
-
   background-image: linear-gradient(80deg, #d95a24, #A40606, brown);
-
-       /* background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-        text-shadow: 0 5px 10px rgba(0, 0, 0, 1);*/
   box-shadow: 0 2px 10px rgb(53, 4, 4);
-         box-shadow: #0c0d13;
+  box-shadow: #0c0d13;
+  /*alternative background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);*/
 }
 
 /*footer <a> styling*/
 footer a  {
   padding: 15px;
   font-weight:  bold;
-      
 }
 
 /*hover on footer causes text color style change*/
@@ -226,44 +195,25 @@ footer a:hover  {
   color:#fff;
 }
 
-/*header, main, footer{
-  flex-shrink: 1;
-}*/
-
 /*when screen reaches 768px everything should align into a column*/
 /*@media screen and (max-width: 768px) {*/
-      @media all and (min-width: 768px) {
-/*main,
-.header,
-nav,
-.content,
-.project,
-footer {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column;*/
-  /*.container,*/
-    /*flex-direction: row;
-    flex-wrap: wrap;*/
-    .content  {
-      
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    main  {
-      flex: 2;
-      order:  2;
-      min-height: 80vh;
-    }
-    .aside  {
-      order:  1;
-      flex: 1;
-    }
-  
-    .project {
-      
+@media all and (min-width: 768px) {
+.content  {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main  {
+  flex: 2;
+  order:  2;
+  min-height: 80vh;
+}
+.aside  {
+  order:  1;
+  flex: 1;
+}
+.project {
       order:  3;
-          }
+    }
   }
 
 
